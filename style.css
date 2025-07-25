@@ -1,0 +1,221 @@
+/* --- General Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* --- Header --- */
+.header {
+    background: #fff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* --- Main Content --- */
+.main-content {
+    flex: 3;
+}
+
+.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    flex: 1;
+}
+
+.sidebar .about-me {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sidebar .about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* --- Post Preview Image --- */
+.post-preview-image {
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #333;
+    color: #fff;
+}
+
+/* --- Button Styles --- */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Contact Form --- */
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form .submit-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #218838;
+}
+
+/* --- Responsive Video Embed --- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-top: 20px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Champagne Theme for Posts --- */
+.theme-champagne {
+    background-color: #f7f3e9; /* Light champagne background */
+}
+
+.theme-champagne .header {
+    background-color: #e8e0d1; /* Darker champagne for header */
+    border-bottom: 1px solid #dcd0b9;
+}
+
+.theme-champagne .post {
+    background-color: #fff;
+    border: 1px solid #e8e0d1;
+}
+
+.theme-champagne .footer {
+    background: #4a4238; /* Dark brown for footer */
+    color: #f7f3e9;
+}
+
+/* --- Post Page Layout --- */
+.post-full-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.post-full-content .post-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.post-full-content .post-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-full-content .post-text {
+    flex: 2;
+}
